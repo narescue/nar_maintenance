@@ -1,10 +1,11 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title> Maintenance</title><link rel="stylesheet" type="text/css" href="style.css" /></head><body>
+<!--copy this file to fastly.com -->
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title> Maintenance</title><link rel="stylesheet" type="text/css" href="https://narescue.github.io/nar_maintenance/style.css" /></head><body>
 <div id="container"><div class="logo-bg"><img id="logo" /></div><div class="words">
 <div class="primary"><span id="site"></span> is currently undergoing maintenance and will be back shortly</div>
 <div class="secondary">Thank you for your patience</div>
 </div></div></body></html>
 <script type="text/javascript">
 function e(i){return document.getElementById(i);};let c=e("container").classList,s=e("site"),l=e("logo"),dt=document.title,stb="STOP THE BLEED",i="https://narescue.github.io/nar_maintenance/img/";
-if(window.location.hash=='#acs'){c.add("acs");document.title=stb+" "+dt;s.innerHTML=stb+"<sup>®</sup>";l.src=i+"acs.png";
-}else{c.add("nar");document.title="NARescue "+dt;s.innerHTML="NARescue";l.src=i+"nar.png";}
+if(document.domain.includes('nar')){c.add("nar");document.title="NARescue "+dt;s.innerHTML="NARescue";l.src=i+"nar.png";
+}else{c.add("acs");document.title=stb+" "+dt;s.innerHTML=stb+"<sup>®</sup>";l.src=i+"acs.png";}
 </script>
